@@ -523,7 +523,9 @@ img {
 
 .footer-container {
     display: flex;
-    align-items: baseline
+    align-items: baseline;
+    justify-content: center;
+    
 }
 
 .logo-container {
@@ -586,7 +588,69 @@ img {
     fill: var(--third-accent-color);
 }
 
-/* MODAL */
+.footer-form {
+    margin-left: 80px;
+}
+
+.footer-label {
+    display: block;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding-left: 16px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.footer-input::placeholder {
+    font-size: 12px;
+    font-family: Roboto;
+    line-height: 2;
+    letter-spacing: 0.48px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-btn {
+    width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    background-color: var(--accent-color-text);
+    border-radius: 4px;
+    border: none;
+
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover, .footer-btn:focus {
+    background-color: var(--second-accent-color-text);
+}
+
+/*=========================================== MODAL ================================================*/
 
 .backdrop {
     position: fixed;
@@ -615,6 +679,7 @@ img {
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -652,4 +717,35 @@ img {
     fill: #ffffff;
 }
 
+.modal-form {
+    margin: 30px 0;
+}
 
+.modal-title {
+    color: var(--second-color-text);
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5px;
+    letter-spacing: 0.32px;
+}
+
+.modal-label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+}
+
+.modal-input {
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+    background-color: transparent;
+    margin-bottom: 8px;
+    padding-left: 38px;
+}
+
+.modal-text {
+    width: 360px;
+    height: 120px;
+}

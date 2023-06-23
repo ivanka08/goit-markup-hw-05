@@ -522,7 +522,7 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="footer-container">
         <div class="logo-container">
           <a class="link logo" href="./index.html"
             >Web<span class="logo-part-footer">Studio</span></a
@@ -585,6 +585,23 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form">
+          <label for="footer-email" class="footer-label">Subscribe</label>
+          <input
+            type="email"
+            name="footer-email"
+            class="footer-input"
+            id="footer-email"
+            placeholder="E-mail"
+          />
+          <button type="submit" class="footer-btn">
+            Subscribe
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-frame"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
 
@@ -595,6 +612,45 @@
             <use href="./images/icons.svg#icon-closeblack"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="modal-name" class="modal-label">Name</label>
+            <input
+              type="text"
+              name="modal-name"
+              class="modal-input"
+              id="modal-name"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="modal-tel" class="modal-label">Phone</label>
+            <input
+              type="tel"
+              name="modal-tel"
+              class="modal-input"
+              id="modal-tel"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="modal-email" class="modal-label">Email</label>
+            <input
+              type="email"
+              name="modal-email"
+              class="modal-input"
+              id="modal-email"
+            />
+          </div>
+          <div class="modal-field"></div>
+          <label for="modal-text">Comment</label>
+          <textarea
+            name="modal-text"
+            id="modal-text"
+            placeholder="Text input"
+            class="modal-text"
+          ></textarea>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
