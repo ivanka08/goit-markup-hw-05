@@ -606,6 +606,7 @@ img {
     margin-left: 80px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 24px;
 }
 
@@ -628,6 +629,12 @@ img {
     background-color: transparent;
     padding-left: 16px;
     position: relative;
+
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: #ffffff;
     outline: transparent;
 }
 
@@ -636,14 +643,14 @@ img {
     font-family: Roboto;
     line-height: 2;
     letter-spacing: 0.48px;
-    color: #FFFFFF;
+    color: #ffffff;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .footer-btn {
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     padding: 8px 24px;
     background-color: var(--accent-color-text);
@@ -653,7 +660,7 @@ img {
 
     color: #FFFFFF;
     text-align: center;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.64px;
@@ -661,12 +668,15 @@ img {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-btn:hover, .footer-btn:focus {
     background-color: var(--second-accent-color-text);
+}
+
+.submit-icon {
+    margin-left: 16px;
 }
 
 /*=========================================== MODAL ================================================*/
