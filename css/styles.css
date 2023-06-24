@@ -852,8 +852,8 @@ img {
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.40);
-    display: block;
     margin-right: 8px;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -861,9 +861,6 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-span {
-    display: inline-flex;
-}
 
 .modal-check:checked + .check-text span {
     background-color: var(--second-accent-color-text);
