@@ -748,7 +748,7 @@ img {
 
 
 .modal-field {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .modal-title {
@@ -800,6 +800,10 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-textarea {
+    margin-bottom: 16px;
+}
+
 .modal-text {
     width: 360px;
     height: 120px;
@@ -827,6 +831,7 @@ img {
 
 .modal-policy {
     margin-bottom: 24px;
+    
 }
 
 .check-text {
@@ -854,6 +859,10 @@ img {
     justify-content: center;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-span {
+    display: inline-flex;
 }
 
 .modal-check:checked + .check-text span {
