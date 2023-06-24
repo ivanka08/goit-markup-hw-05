@@ -847,6 +847,10 @@ img {
     color: var(--accent-color-text);
 }
 
+.check-span {
+    display: inline-flex;
+}
+
 .check-text span {
     width: 16px;
     height: 16px;
