@@ -608,6 +608,7 @@ img {
 
 .footer-text {
     display: block;
+    margin-left: 80px;
     margin-bottom: 16px;
     color: #FFFFFF;
     font-weight: 500;
