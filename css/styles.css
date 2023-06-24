@@ -839,8 +839,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.48px;
     color: var(--icon-color);
-    display: flex;
-    align-items: center;
 }
 
 .check-text a {
